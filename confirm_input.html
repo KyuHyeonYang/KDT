@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>confirm_input</title>
+			<script type="text/javascript">
+			//변수 선언하고 반환 값 저장
+			let isStudent=confirm("당신은 학생입니까?");//[확인]/[취소]:ture.false
+				if(isStudent== true){
+					result="학생입니다";
+					discount="50%";
+					//JS 는 명시적으로 선언해도 되고 안해도 되지만 차이점은 있음.나중에 배움
+				}else{
+					result="학생이아닙니다";
+					discount="없음";
+				}		
+				document.write("결과: "+result +"<br>");
+				document.write("할인율: "+ discount);
+				
+				console.log("결과: "+ result);
+				console.log("할인율 : "+discount);
+			</script>
+		</head>
+		<body>
+			<h2>body 본문에서 출력</h2>
+		</body>
+</html>
